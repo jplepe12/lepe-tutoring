@@ -1,208 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Online math tutoring with Jaime P. Lepe. Algebra, geometry, precalculus, calculus, and statistics." />
-  <title>Jaime P. Lepe | Math Tutoring</title>
-  <style>
-    :root {
-      --navy: #17324d;
-      --blue: #2f6fa3;
-      --light: #eef5fb;
-      --white: #ffffff;
-      --text: #24313d;
-      --accent: #f2b84b;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background: var(--white);
-      line-height: 1.6;
-    }
-    .container { width: min(1100px, 92%); margin: 0 auto; }
-    header {
-      background: linear-gradient(135deg, var(--navy), var(--blue));
-      color: var(--white);
-      padding: 44px 0 64px;
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 24px;
-      margin-bottom: 56px;
-    }
-    .brand { font-size: 1.25rem; font-weight: 700; }
-    nav a {
-      color: var(--white);
-      text-decoration: none;
-      margin-left: 18px;
-      font-weight: 600;
-    }
-    .hero {
-      display: grid;
-      grid-template-columns: 1.35fr 0.65fr;
-      gap: 44px;
-      align-items: center;
-    }
-    h1 {
-      font-size: clamp(2.4rem, 6vw, 4.8rem);
-      line-height: 1.05;
-      margin: 0 0 18px;
-    }
-    .hero p { font-size: 1.2rem; max-width: 680px; }
-    .cta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 28px;
-    }
-    .button {
-      display: inline-block;
-      padding: 13px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 700;
-    }
-    .button-primary { background: var(--accent); color: #1f2a33; }
-    .button-secondary { border: 2px solid var(--white); color: var(--white); }
-    .math-card {
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.25);
-      border-radius: 18px;
-      padding: 28px;
-      text-align: center;
-      font-size: 1.25rem;
-    }
-    section { padding: 72px 0; }
-    section.alt { background: var(--light); }
-    h2 {
-      color: var(--navy);
-      font-size: 2rem;
-      margin-top: 0;
-      margin-bottom: 20px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-    .card {
-      background: var(--white);
-      border-radius: 14px;
-      padding: 24px;
-      box-shadow: 0 8px 28px rgba(20, 52, 77, 0.08);
-    }
-    .card h3 { margin-top: 0; color: var(--blue); }
-    .contact-box {
-      background: var(--navy);
-      color: var(--white);
-      border-radius: 18px;
-      padding: 34px;
-    }
-    .contact-box h2 { color: var(--white); }
-    .contact-box a { color: var(--accent); font-weight: 700; }
-    footer {
-      background: #102437;
-      color: #d8e5ef;
-      text-align: center;
-      padding: 28px 0;
-    }
-    @media (max-width: 780px) {
-      nav { align-items: flex-start; flex-direction: column; }
-      nav .links a { margin: 0 14px 0 0; }
-      .hero, .grid { grid-template-columns: 1fr; }
-      header { padding-top: 30px; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jaime P. Lepe Math Tutoring</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f5f7fb;color:#17324d}
+header{background:#163a63;color:white;padding:50px 20px}
+.wrap{max-width:1100px;margin:auto}
+.hero{display:flex;gap:40px;align-items:center;flex-wrap:wrap}
+.hero img{width:280px;border-radius:18px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.btn{display:inline-block;background:#d4a72c;color:#17324d;padding:14px 22px;border-radius:8px;text-decoration:none;font-weight:bold}
+section{padding:50px 20px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{background:white;border-radius:12px;padding:20px;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+table{width:100%;border-collapse:collapse}
+th,td{padding:12px;border-bottom:1px solid #ddd}
+th{background:#163a63;color:#fff}
+footer{background:#163a63;color:#fff;text-align:center;padding:20px}
+</style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <nav>
-        <div class="brand">Jaime P. Lepe | Math Tutor</div>
-        <div class="links">
-          <a href="#subjects">Subjects</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
+<header>
+<div class="wrap hero">
+<img src="headshot.png" alt="Jaime P. Lepe">
+<div>
+<h1>Need Help With Math?</h1>
+<h2>Learn from a University Mathematics Instructor</h2>
+<p>Personalized online tutoring for middle school, high school, college, and adult learners.</p>
+<a class="btn" href="#contact">Book Your First Session</a>
+</div>
+</div>
+</header>
 
-      <div class="hero">
-        <div>
-          <h1>Math tutoring that makes difficult ideas clear.</h1>
-          <p>
-            Personalized online tutoring for middle school, high school, and college students.
-            Build confidence, strengthen fundamentals, and prepare for the upcoming school year.
-          </p>
-          <div class="cta-row">
-            <a class="button button-primary" href="tel:+19154942161">Call or Text</a>
-            <a class="button button-secondary" href="mailto:jplepe2@utep.edu">Email Jaime</a>
-          </div>
-        </div>
-        <div class="math-card">
-          <div>Algebra • Geometry</div>
-          <div>Precalculus • Calculus</div>
-          <div>Statistics</div>
-        </div>
-      </div>
-    </div>
-  </header>
+<section class="wrap">
+<h2>Subjects</h2>
+<div class="cards">
+<div class="card">Pre‑Algebra<br>Algebra I & II<br>Geometry<br>Trigonometry</div>
+<div class="card">Precalculus<br>College Algebra<br>Calculus I–III<br>Differential Equations</div>
+<div class="card">Statistics<br>AP Calculus<br>AP Statistics<br>Homework & Test Prep</div>
+</div>
+</section>
 
-  <section id="subjects">
-    <div class="container">
-      <h2>Subjects</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Middle & High School</h3>
-          <p>Pre-algebra, algebra, geometry, advanced algebra, and precalculus.</p>
-        </div>
-        <div class="card">
-          <h3>College Mathematics</h3>
-          <p>College algebra, calculus, introductory statistics, and related coursework.</p>
-        </div>
-        <div class="card">
-          <h3>Homework & Exam Support</h3>
-          <p>Step-by-step help, review sessions, test preparation, and stronger study habits.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="wrap">
+<h2>Rates (USD)</h2>
+<table>
+<tr><th>Session</th><th>Price</th></tr>
+<tr><td>30 Minutes</td><td>$30</td></tr>
+<tr><td><strong>60 Minutes (Most Popular)</strong></td><td><strong>$55</strong></td></tr>
+<tr><td>90 Minutes</td><td>$80</td></tr>
+<tr><td>2‑Hour Exam Review</td><td>$100</td></tr>
+</table>
+</section>
 
-  <section id="about" class="alt">
-    <div class="container">
-      <h2>About Jaime</h2>
-      <p>
-        Jaime P. Lepe is an experienced university mathematics instructor who helps students
-        understand not only how to solve a problem, but why the method works. Sessions are patient,
-        practical, and adapted to each student's level.
-      </p>
-      <p>
-        Online tutoring is available for students in El Paso, Ciudad Juárez, and throughout the
-        United States. Rates and scheduling are available upon request.
-      </p>
-    </div>
-  </section>
+<section class="wrap" id="contact">
+<h2>Contact</h2>
+<p><strong>Phone:</strong> 915‑494‑2161</p>
+<p><strong>Email:</strong> jplepe2@utep.edu</p>
+<p>Serving students throughout the United States via online tutoring.</p>
+</section>
 
-  <section id="contact">
-    <div class="container">
-      <div class="contact-box">
-        <h2>Schedule a tutoring session</h2>
-        <p>Contact Jaime to discuss the student's course, goals, availability, and rates.</p>
-        <p><strong>Phone:</strong> <a href="tel:+19154942161">915-494-2161</a></p>
-        <p><strong>Email:</strong> <a href="mailto:jplepe2@utep.edu">jplepe2@utep.edu</a></p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      © 2026 Jaime P. Lepe Math Tutoring
-    </div>
-  </footer>
+<footer>© Jaime P. Lepe Math Tutoring</footer>
 </body>
 </html>
