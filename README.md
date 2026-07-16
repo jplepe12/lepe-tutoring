@@ -1,1 +1,2 @@
-Upload all files and folders to your GitHub repository, then commit changes.
+# Jaime P. Lepe Math Tutoring
+Upload these files to your GitHub repository.
