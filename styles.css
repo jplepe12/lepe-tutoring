@@ -1,0 +1,14 @@
+body{margin:0;font-family:Arial,sans-serif;background:#f6f8fb;color:#18324b}
+nav{display:flex;justify-content:space-between;align-items:center;background:#12395d;color:#fff;padding:16px 8%}
+nav a{color:#fff;text-decoration:none;margin-left:18px}
+.logo{font-weight:bold}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;padding:70px 8%;background:linear-gradient(#12395d,#1b5689);color:#fff}
+.hero img{width:100%;max-width:340px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.btn{display:inline-block;background:#d4a62a;color:#12395d;padding:14px 22px;border-radius:8px;text-decoration:none;font-weight:bold}
+section{padding:60px 8%} h2{text-align:center}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.cards>div{background:#fff;padding:22px;border-radius:14px;box-shadow:0 4px 15px rgba(0,0,0,.08);text-align:center}
+.featured{border:3px solid #d4a62a}
+.price p{font-size:2rem;font-weight:bold;color:#12395d}
+footer{background:#12395d;color:#fff;text-align:center;padding:20px}
+@media(max-width:800px){.hero{grid-template-columns:1fr;text-align:center}.hero-img{justify-self:center}}
